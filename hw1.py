@@ -15,5 +15,5 @@ print("8:30 PM - Practice Piano")
 print("9:30 PM - Piano Class")
 print("10:30 PM - Study Time")
 print("12:00 AM - Sleep")
-study_time = 1+7+1+1+1.5
-print("Total Study Time: ", study_time, "hours")
+study_time = (1+7+1+1+1.5)*7
+print("Total Study Time in a week: ", study_time, "hours")
