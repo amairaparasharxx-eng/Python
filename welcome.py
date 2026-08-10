@@ -1,0 +1,5 @@
+print("welcome to the world of coding!")
+print(4)
+print("\n hello")
+print("happy", 5)
+print("ending line", end="*")
