@@ -13,3 +13,5 @@ for i in range(1,6):
     else:
         print(f"CORRECT!! The number was {number}!!")
         break
+if (guess!=number) in range(1,6):
+    print("Number was", number)
