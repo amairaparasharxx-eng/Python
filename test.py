@@ -1,17 +1,23 @@
-#Number Guessing Game
-#Build a game where the computer picks a secret number between 1 and 50.
-#You have 5 attempts to guess it. After every wrong guess your program shows a hint telling you how close you are. 
-# Remaining lives are shown as hearts after each attempt.
-import random
-number=random.randint(1,50)
-for i in range(1,6):
-    guess=int(input("enter your guess: "))
-    if guess>number:
-       print("Hint: Number is lesser than guess")
-    elif guess<number:
-        print("Hint: Number is greater than guess")
-    else:
-        print(f"CORRECT!! The number was {number}!!")
-        break
-if (guess!=number) in range(1,6):
-    print("Number was", number)
+scorepair= {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78,
+    "Diana": 95,
+    "Ethan": 88
+}
+total=0
+for name in scorepair:
+    total+=scorepair[name]
+    avg=total/5
+print(avg)
+
+lowest=scorepair.min(scorepair.values(), key= scorepair.get())
+highest=max(scorepair.values(), key=scorepair.get())
+print(f"Highest: {highest}, and Lowest: {lowest}")
+
+student=input("Enter the name of the student you want to search for: ")
+score=scorepair.get(student)
+if score is None:
+    print("student not found!!!!")
+else:
+    print(f"Found!!!{student}'s score is {score}")
